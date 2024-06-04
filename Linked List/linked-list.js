@@ -401,3 +401,84 @@
 // }
 
 
+
+//// ***************************  make a linked list  ************
+// class NewNode{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// class LinkedLinks{
+//     constructor(){
+//         this.head = null;
+//     }
+//     append(data){
+//         if(this.head === null){
+//             this.head = new NewNode(data);
+//         }
+//         else{
+//             let current = this.head;
+//             while(current.next !== null){
+//                 current = current.next;
+//             }
+//             current.next = new NewNode(data);
+            
+//         }
+//     }
+// }
+// let list1 = new LinkedLinks()
+// list1.append(3)
+// list1.append(6);
+
+
+//// **********************  make a linkdlist according to the user.
+class Node{
+    constructor(data){
+        this.data = data;
+        this.next = null;
+    }
+}
+
+let printElemlent = (arr) => {
+    if(arr === null){
+        console.log('list is empty.')
+        return
+    }
+    while(arr !== null){
+        console.log(arr.data);
+        arr=arr.next;
+    }
+}
+
+class LinkList {
+    constructor(){
+        this.head = null;
+    }
+
+    append(data){
+        if(this.head === null){
+            this.head = new Node(data);
+        }
+        else{
+            let curr = this.head;
+            while(curr.next !== null){
+                curr = curr.next;
+            }
+            curr.next = new Node(data);
+        }
+        return
+    }
+}
+let link_list = new LinkList();
+
+let input = require('readline-sync');
+let n = + input.question('n: ');
+for (let i =0 ; i<n; i++){
+    let element = + input.question('elememnt: ');
+    link_list.append(element);
+
+}
+console.log(link_list)
+printElemlent(link_list.head);
