@@ -51,3 +51,6 @@ bfs(root)
 deletationElemet(root, 2);
 console.log('After detation elements')
 bfs(root)
+
+let a = new Stack(4);
+console.log(a);
