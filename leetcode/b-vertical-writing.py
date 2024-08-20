@@ -4,7 +4,6 @@ for i in range(int(input())):
   s=input()
   max_len=max(max_len, len(s))
   
-  arr.append(list(s))
 
 for ind in range(len(arr)):
   if(len(arr[ind])<max_len):
