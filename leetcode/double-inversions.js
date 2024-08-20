@@ -1,3 +1,4 @@
+
 function main(input){
     let lines = input.trim().split('\n');
     let t=parseInt(lines[0]);
