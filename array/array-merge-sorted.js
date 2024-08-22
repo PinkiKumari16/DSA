@@ -11,7 +11,7 @@ while(i<a.length || i<b.length){
         c[x]=a[i];
         i++;
     }
-    else if(b[j]<a[i] && ){
+    else if(b[j]<a[i] ){
         c[x]=b[j];
         j++;
     }
