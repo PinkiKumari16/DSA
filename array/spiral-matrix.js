@@ -22,14 +22,17 @@ var spiralOrder = function(matrix) {
             
         }
         right--;
-        for(let i=right-1; i>=left; i--){
-            res.push(matrix[bottom-1][i]);
-            
+        if(top<bottom){
+            for(let i=right-1; i>=left; i--){
+                res.push(matrix[bottom-1][i]);
+                
+            }
         }
         bottom--;
-        for(let i=bottom-1; i>=top; i--){
-            res.push(matrix[i][left]);
-            
+        if(left<rigth){
+            for(let i=bottom-1; i>=top; i--){
+                res.push(matrix[i][left]);       
+            }
         }
         left++;
     }

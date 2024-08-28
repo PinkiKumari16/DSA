@@ -35,29 +35,29 @@ class Queue{
 
 
 
-// const arr = [12,-1,-7, 8,-15, 30,16,28];
-// let k=3;
-// const res = [];
+const arr = [12,-1,-7, 8,-15, 30,16,28];
+let k=3;
+const res = [];
 
-// let queue=new Queue(k);
-// for(let i=0; i<k; i++){
-//     if(arr[i]<0){
-//         queue.enQueue(arr[i]);
-//     }
-// }
-// res.push(queue.queue[0])
-// console.log(res);
-// console.log(queue.queue)
-// for(let i=1; i<arr.length-k+1; i++){
-//     if(arr[i+k-1]<0){
-//         queue.enQueue(arr[i+k-1]);
-//     }
-//     if(arr[i-1]<0){
-//         queue.deQueue();
-//     }
-//     res.push(queue.frontElement());
-// }
-// console.log(res)
+let queue=new Queue(k);
+for(let i=0; i<k; i++){
+    if(arr[i]<0){
+        queue.enQueue(arr[i]);
+    }
+}
+res.push(queue.queue[0])
+console.log(res);
+console.log(queue.queue)
+for(let i=1; i<arr.length-k+1; i++){
+    if(arr[i+k-1]<0){
+        queue.enQueue(arr[i+k-1]);
+    }
+    if(arr[i-1]<0){
+        queue.deQueue();
+    }
+    res.push(queue.frontElement());
+}
+console.log(res)
 
 
 

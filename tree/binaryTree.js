@@ -25,14 +25,15 @@ class Node{
     }
 }
 // DFS method to traverce in the tree.
-// InOrder 
+// Pre Order.
 function preOrder(tree){
     if(tree===null) return;
     console.log(tree.data + ' ');
     preOrder(tree.left);
     preOrder(tree.right);
 }
-// Pre Order.
+
+// InOrder 
 function inOrder(tree){
     if(tree===null) return;
     inOrder(tree.left);

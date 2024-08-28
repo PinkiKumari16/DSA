@@ -4,7 +4,7 @@ function findAnnagram(s,pat){
     let patArr = new Array(26).fill(0);
     let allArr = new Array(26).fill(0);
 
-    while(statWin<pat.length){
+    while(statWin<pat.length){  
         patArr[pat[statWin].charCodeAt()-97]=1;
         allArr[s[statWin].charCodeAt()-97]=1;
         statWin++;
